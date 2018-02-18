@@ -3,7 +3,7 @@
 	<meta charset="UTF-8">
 	<title></title>
 	<style>
-		.car{
+		.car_1301164045{
 			position: relative;
 			width: 300px;
 			height: 300px;
@@ -14,7 +14,7 @@
 			height: 300px;
 		}
 
-		.block{
+		.block_1301164045{
 			position: fixed;
 			right: 0px;
 			width: 10px;
@@ -26,71 +26,71 @@
 	</style>
 </head>
 <body>
-	<span class="car"><img src="img/mobil.png" alt=""></span>
-	<span class="block"></span>
-	
+	<span class="car_1301164045"><img src="img/mobil.png" alt=""></span>
+	<span class="block_1301164045"></span>
+
 	<div>
-	<button id="btn1">Maju 10 pixel</button>
-	<button id="btn2">Maju 1 langkah</button>
-	<button id="btn3">Maju 2 langkah</button>
-	<button id="btn4">Mundur 10 pixel</button>
-	<button id="btn5">Mundur 1 langkah</button>
-	<button id="btn6">Mundur 2 langkah</button>
+	<button id="btn1_1301164045">Maju 10 pixel</button>
+	<button id="btn2_1301164045">Maju 1 langkah</button>
+	<button id="btn3_1301164045">Maju 2 langkah</button>
+	<button id="btn4_1301164045">Mundur 10 pixel</button>
+	<button id="btn5_1301164045">Mundur 1 langkah</button>
+	<button id="btn6_1301164045">Mundur 2 langkah</button>
 	</div>
 
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script>
-		var p = parseInt($(".block").position().left);  //get block's position
-		var width = parseInt($(".car").width());  //get .car's width
+		var p = parseInt($(".block_1301164045").position().left);  //get block's position
+		var width = parseInt($(".car_1301164045").width());  //get .car's width
 		var position = 0;
 		$(document).ready(function() {
-			$("#btn1").click(function() {
+			$("#btn1_1301164045").click(function() {
 				position+=10;
 				//Move elements to left for 10 px
-				$(".car").animate({left:position});
+				$(".car_1301164045").animate({left:position});
 				checkPosition();
 			});
 
 
-			$("#btn2").click(function() {
+			$("#btn2_1301164045").click(function() {
 				position+=width;
 				//Move elements to left for image width's pixel
-				$(".car").animate({
+				$(".car_1301164045").animate({
 					left: position
 				});
 				checkPosition();
 			});
 
-			$("#btn3").click(function() {
+			$("#btn3_1301164045").click(function() {
 				position+=2*width;
 				//Move elements to left for 2 times of image width
-				$(".car").animate({
+				$(".car_1301164045").animate({
 					left: position
 				});
 				checkPosition();
 			});
 
-			$("#btn4").click(function() {
+			$("#btn4_1301164045").click(function() {
 				position-=10;
 				//Move elements to right for 10px
-				$(".car").animate({
+				$(".car_1301164045").animate({
 					left: position
 				});
 			});
 
-			$("#btn5").click(function() {
+			$("#btn5_1301164045").click(function() {
 				position-=width;
 				//Move elements to right for image's width
-				$(".car").animate({
+				$(".car_1301164045").animate({
 					left: position
 				});
 			});
 
-			$("#btn6").click(function() {
+			$("#btn6_1301164045").click(function() {
 				position-=2*width;
 				//Move elements to right for 2 times of image's width
-				$(".car").animate({
+				$(".car_1301164045").animate({
 					left: position
 				});
 			});
@@ -98,7 +98,7 @@
 			function checkPosition() {
 				if (position >= p) {
 					position = 0;
-					$(".car").animate({
+					$(".car_1301164045").animate({
 						left: position
 					});
 				}
