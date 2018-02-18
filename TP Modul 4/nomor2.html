@@ -1,0 +1,51 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Nomor 2</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="nomor2.js"></script>
+	<link rel="stylesheet" href="nomor2.css">
+
+</head>
+<body>
+
+	<table id="tableForm">
+		<tr>
+			<td><a>Nama:</a></td>
+			<td><input type="text" name="nama" id="inpName_1301164045"></td>
+		</tr>
+		
+		<tr>
+			<td><a>NIM:</a></td>
+			<td><input type="number" name="nim" id="inpNim_1301164045"></td>
+		</tr>
+
+		<tr>
+			<td><a>Kelas:</a></td>
+			<td><input type="text" name="kelas" id="inpKelas_1301164045"><br></td>
+		</tr>
+		
+		<tr>
+			<td><a>Jenis kelamin:</a></td>
+			<td>
+				<input type="radio" name="gender" value="Laki-Laki">Laki-Laki
+				<input type="radio" name="gender" value="Perempuan">Perempuan
+			</td>
+		</tr>
+		
+		<tr>
+			<td colspan="2"><input type="submit" value="Submit" id="btnSubmit"></td>
+		</tr>	
+	</table>
+
+	<table border="1" id="tableResult">
+		<tr>
+			<th>Nama</th>
+			<th>NIM</th>
+			<th>Kelas</th>
+			<th>Jenis Kelamin</th>
+			<th>Action</th>
+		</tr>
+	</table>
+</body>
+</html>

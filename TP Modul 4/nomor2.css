@@ -1,0 +1,27 @@
+a{
+	color: #B71C1C;
+	font-weight: bold;
+	font-size: 15px;
+	font-family: sans-serif;
+	margin-right: 10px;
+}
+
+#tableForm{
+	padding: 16px;
+	margin-bottom: 30px;
+	background-color: #E0E0E0;
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+}
+
+#btnSubmit{
+	border: none;
+	background-color: #64DD17;
+	padding: 10px;
+	width: 100%;
+	border-radius: 5px;
+	font-weight: bold;
+	font-size: 15px;
+	color: white;
+}
