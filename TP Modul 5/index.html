@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TP MOD 5 | 1301164045</title>
+	<!-- Load your Bootstrap CSS Library Here -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<!-- Load your CSS Style Here! -->
+	<link rel="stylesheet" type="text/css" href="css/tp.css">
+	<!--Load your JQuery here!-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Load your Bootstrap JS Library Here -->
+	<script type="text/javascript" src="bootstrap.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#btnMasuk").click(function() {
+				var email = $("input[type='email']").val();
+				if (email !== "" &&
+				 $("input[type='password']").val() !== "")
+				  {
+					$("form").hide();
+					$(".welcome-text").after("<div class='text-center text-danger welcome-login'><b>Halo Aditya!</b></div>");
+					alert("Email anda: " + email);
+				  }else
+				  {
+					alert("Masukkan email dan password anda!");
+				  }				
+			});
+		});
+	</script>
+
+</head>
+<body background="img/bg.jpg">
+	<div>
+		<div>
+			<div>
+					<div class="container">
+						<div class="row justify-content-center">
+							<div class="col-md-5 col-sm-12 rounded-left">
+								<div class="text-center logo_1301164045">	
+									<img class="image-logo_1301164045" src="img/logo.png">
+								</div>
+								<div class="text-center welcome-text">	
+									<p><b>Selamat Datang,</b></p>
+								</div>
+								
+									<!-- Insert Your Form Here -->
+								<form>
+									<div class="form-group">
+										<input type="email" class="form-control" placeholder="Masukkan E-mail">
+									</div>
+									<div class="form-group">
+										<input type="password" class="form-control" placeholder="Masukkan kata sandi">
+									</div>
+									<button type="button" class="btn btn-danger btn-block" id="btnMasuk">Masuk</button>
+								</form>
+								<footer class="footer text-center">
+									<!-- Insert Your Copyright Here -->
+									<span class="text-muted">Copyright &copy; 2018 - All Right reserved &bull; Design by
+										<a class="text-danger"> Aditya Eka Maulana</a></span>
+								</footer>
+							</div>
+							<div class="col-md-5 col-sm-12 rounded-right">
+								<!-- Insert Your Description and Photo Here -->
+								<div class="text-center profile_1301164045" >
+									<img src="img/profil.jpg" class="rounded-circle image-profile_1301164045">
+								</div>
+
+								<div>
+									<p class="text-justify introduction_1301164045">
+										Halo, nama saya <b>Aditya Eka Maulana</b>! Saya adalah
+										mahasiswa <a class="text-info"><b>S1 Teknik Informatika 
+										di Telkom University kelas IF-40-04</b></a>. Saat ini saya
+										sedang belajar pemrograman web. Pemrograman web menyenangkan
+										loh! 	&hearts;
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</body>
+</html>

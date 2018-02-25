@@ -1,0 +1,29 @@
+#img{
+	width:35%;
+	height: 35%;
+	border-radius: 100%;
+	margin-bottom: 2%;
+	margin-top: 10%
+}
+.class{
+	padding-top: 76px;
+}
+.img1{
+	width: 20%;
+	margin-bottom: 2%;
+	margin-top: 10%;	
+}
+#p{
+	font-weight: bold;
+}
+input{
+	border:none;
+	border-bottom:2px solid red;
+	width: 80%;
+}
+button{
+	margin-top: 25px;
+	width: 80%;
+	background-color: #E74C3C;
+	margin-bottom: 4%;
+}
